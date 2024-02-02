@@ -152,8 +152,7 @@
         }
     }
 
-    /*Styling för lightmode*/
-
+    /*Styling för rubriker*/
     main {
         min-height: 100vh;
         padding-top: 10px;
@@ -161,4 +160,20 @@
 
     h1 {
         text-align: center;
+    }
+
+    /*Styling för bilder*/
+
+    picture {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        img {
+            max-width: 80%;
+            border-radius: 20px;
+        }
     }
