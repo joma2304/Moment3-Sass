@@ -50,6 +50,11 @@
     h1 {
         color: layout.$text-dark;
     }
+
+    footer {
+        background-color: rgb(53, 53, 53);
+        color: white;
+    }
 }
 
 /*Styling för lightmode*/
@@ -75,7 +80,7 @@
 
 
     .active {
-        color: layout.$thrid-color;
+        color: rgb(0, 99, 0);
     }
 
     /* Meny knapp, öppna meny */
@@ -99,6 +104,11 @@
     }
 
     h1 {
+        color: layout.$text-color;
+    }
+
+    footer {
+        background-color: layout.$thrid-color;
         color: layout.$text-color;
     }
 }

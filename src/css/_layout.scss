@@ -1,9 +1,14 @@
-$font-stack: monospace, sans-serif;
-$primary-color: #9196c7; 
+/*Font*/
+$font-stack: 'Exo 2', sans-serif;
+
+/*Ljusa färger*/
+$primary-color: #9196c7;
 $secondary-color: #ebebeb;
-$thrid-color: #0d5624;
+$thrid-color: #91bd9f;
 $text-color: darken($thrid-color, 50%);
+
+/*Mörka färger*/
 $primary-dark: #0F0F0F;
-$secondary-dark: #232D3F; 
+$secondary-dark: #232D3F;
 $third-dark: #018a63;
 $text-dark: lighten($third-dark, 80%);
