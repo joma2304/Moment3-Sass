@@ -1,0 +1,164 @@
+@use 'layout';
+
+* {
+    font-family: layout.$font-stack;
+}
+
+/*Styling/
+
+    /* Design av Header */
+    header {
+        height: 100px;
+        margin: 0;
+        position: relative;
+        padding: 0 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    /* Design av meny för mobil*/
+    nav {
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
+        font-size: 1.4em;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 60%;
+        display: none;
+        z-index: 999;
+
+        ul {
+            width: 100%;
+            list-style-type: none;
+            text-align: center;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        li {
+            padding: 0.8em 0;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 0 1em;
+        }
+
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+        }
+    }
+
+
+    .active {
+        text-decoration: underline;
+    }
+
+    /* Meny knapp, öppna meny */
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        padding: 8px 15px;
+        cursor: pointer;
+        margin-right: 2px;
+    }
+
+    .open {
+        margin: 0 1em;
+    }
+
+    .menu-btn:hover {
+        border-radius: 50px;
+        transition: ease-in 0.3s;
+    }
+
+
+    /* de tre svarta strecken*/
+    .bars {
+        display: block;
+        width: 20px;
+        height: 3px;
+        margin: 5px 0;
+    }
+
+
+    /* Meny knapp, stäng */
+    .close {
+        margin: 1em 1.5em;
+        padding: 10px 15px;
+
+    }
+
+    /*Kryss */
+    .cross1 {
+        width: 25px;
+        transform: rotate(45deg);
+        position: relative;
+        top: 5px;
+    }
+
+    .cross2 {
+        width: 25px;
+        transform: rotate(135deg);
+        position: relative;
+        top: -3px;
+    }
+
+    /* Media querys */
+
+    /* Större skärmas - gör menyn som inline */
+    @media only screen and (min-width: 992px) {
+        header {
+            padding: 0 3em;
+        }
+
+        .menu-btn {
+            display: none;
+        }
+
+        #open-menu {
+            display: none !important;
+        }
+
+        header {
+            position: static;
+        }
+
+        nav {
+            display: block !important;
+            position: static;
+            box-shadow: 0 0px 0px;
+            height: auto;
+            font-size: 1.4em;
+            width: auto;
+
+            ul {
+                height: 100%;
+            }
+
+            li {
+                display: inline;
+                padding: 1.2em 0;
+            }
+        }
+    }
+
+    /*Styling för lightmode*/
+
+    main {
+        min-height: 100vh;
+        padding-top: 10px;
+    }
+
+    h1 {
+        text-align: center;
+    }

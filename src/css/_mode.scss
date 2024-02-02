@@ -1,0 +1,104 @@
+@use 'layout';
+
+/*Styling för darkmode*/
+@media (prefers-color-scheme: dark) {
+
+    /* Design av Header */
+    header {
+        background-color: layout.$primary-dark;
+    }
+
+    /* Design av meny för mobil*/
+    nav {
+        background-color: layout.$primary-dark;
+
+        a {
+            color: layout.$text-dark;
+        }
+
+        li:hover {
+            color: layout.$text-dark;
+        }
+    }
+
+
+    .active {
+        color: layout.$third-dark;
+    }
+
+    /* Meny knapp, öppna meny */
+    .menu-btn {
+        background-color: layout.$primary-dark;
+    }
+
+    .menu-btn:hover {
+        background-color: layout.$third-dark;
+    }
+
+
+    /* de tre svarta strecken*/
+    .bars {
+        background-color: rgb(255, 255, 255);
+    }
+
+    /*Styling för lightmode*/
+
+    main {
+        background-color: layout.$secondary-dark;
+    }
+
+    h1 {
+        color: layout.$text-dark;
+    }
+}
+
+/*Styling för lightmode*/
+@media (prefers-color-scheme: light) {
+
+    /* Design av Header */
+    header {
+        background-color: layout.$primary-color;
+    }
+
+    /* Design av meny för mobil*/
+    nav {
+        background-color: layout.$primary-color;
+
+        a {
+            color: layout.$text-color;
+        }
+
+        li:hover {
+            color: layout.$text-color;
+        }
+    }
+
+
+    .active {
+        color: layout.$thrid-color;
+    }
+
+    /* Meny knapp, öppna meny */
+    .menu-btn {
+        background-color: layout.$primary-color;
+    }
+
+    .menu-btn:hover {
+        background-color: layout.$thrid-color;
+    }
+
+    /* de tre svarta strecken*/
+    .bars {
+        background-color: black;
+    }
+
+    /*Styling för bakgrundsfärg*/
+
+    main{
+        background-color: layout.$secondary-color;
+    }
+
+    h1 {
+        color: layout.$text-color;
+    }
+}
