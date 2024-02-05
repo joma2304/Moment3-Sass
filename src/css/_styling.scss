@@ -164,11 +164,15 @@ h1 {
 }
 
 /*Styling för bilder*/
-@mixin images($roundcorners) {
+@mixin images($roundcorners: true) {
     max-width: 80%;
 
     @if $roundcorners {
         border-radius: 20px;
+    }
+
+    @else {
+        border-radius: none;
     }
 }
 
@@ -181,11 +185,11 @@ picture {
     padding-bottom: 30px;
 
     .startpic {
-        @include images (true);
+        @include images ($roundcorners: true);
     }
 
     .sasspic {
-        @include images (false);
+        @include images ($roundcorners: false);
     }
 }
 
@@ -196,6 +200,7 @@ footer {
         list-style: none;
 
         li {
+            margin-right: 1%;
             text-align: center;
         }
     }
