@@ -205,3 +205,16 @@ footer {
         }
     }
 }
+
+.omsass1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    max-width: 600px;
+    padding: 10px;
+}
+
+.omsass2 {
+    @extend .omsass1;
+    font-size: 110%;
+}

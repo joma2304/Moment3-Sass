@@ -22,7 +22,7 @@
 
 
     .active {
-        color: rgb(0, 99, 0);
+        color: layout.$third-dark;
     }
 
     /* Meny knapp, öppna meny */
@@ -51,6 +51,10 @@
 
     footer {
         background-color: layout.$thrid-color;
+        color: layout.$text-color;
+    }
+
+    .omsass {
         color: layout.$text-color;
     }
 
@@ -108,5 +112,9 @@
     footer {
         background-color: rgb(53, 53, 53);
         color: white;
+    }
+
+    .omsass1, .omsass2 {
+        color: layout.$text-dark;
     }
 }
