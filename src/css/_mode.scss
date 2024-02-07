@@ -1,37 +1,37 @@
-@use 'layout';
+@use 'variables';
 
 /*Styling för lightmode*/
 
     /* Design av Header */
     header {
-        background-color: layout.$primary-color;
+        background-color: variables.$primary-color;
     }
 
     /* Design av meny för mobil*/
     nav {
-        background-color: layout.$primary-color;
+        background-color: variables.$primary-color;
 
         a {
-            color: layout.$text-color;
+            color: variables.$text-color;
         }
 
         li:hover {
-            color: layout.$text-color;
+            color: variables.$text-color;
         }
     }
 
 
     .active {
-        color: layout.$third-dark;
+        color: variables.$third-dark;
     }
 
     /* Meny knapp, öppna meny */
     .menu-btn {
-        background-color: layout.$primary-color;
+        background-color: variables.$primary-color;
     }
 
     .menu-btn:hover {
-        background-color: layout.$thrid-color;
+        background-color: variables.$thrid-color;
     }
 
     /* de tre svarta strecken*/
@@ -42,20 +42,20 @@
     /*Styling för bakgrundsfärg*/
 
     main{
-        background-color: layout.$secondary-color;
+        background-color: variables.$secondary-color;
     }
 
     h1 {
-        color: layout.$text-color;
+        color: variables.$text-color;
     }
 
     footer {
-        background-color: layout.$thrid-color;
-        color: layout.$text-color;
+        background-color: variables.$thrid-color;
+        color: variables.$text-color;
     }
 
     .omsass {
-        color: layout.$text-color;
+        color: variables.$text-color;
     }
 
 /*Styling för darkmode*/
@@ -63,34 +63,34 @@
 
     /* Design av Header */
     header {
-        background-color: layout.$primary-dark;
+        background-color: variables.$primary-dark;
     }
 
     /* Design av meny för mobil*/
     nav {
-        background-color: layout.$primary-dark;
+        background-color: variables.$primary-dark;
 
         a {
-            color: layout.$text-dark;
+            color: variables.$text-dark;
         }
 
         li:hover {
-            color: layout.$text-dark;
+            color: variables.$text-dark;
         }
     }
 
 
     .active {
-        color: layout.$third-dark;
+        color: variables.$third-dark;
     }
 
     /* Meny knapp, öppna meny */
     .menu-btn {
-        background-color: layout.$primary-dark;
+        background-color: variables.$primary-dark;
     }
 
     .menu-btn:hover {
-        background-color: layout.$third-dark;
+        background-color: variables.$third-dark;
     }
 
 
@@ -102,11 +102,11 @@
     /*Styling för lightmode*/
 
     main {
-        background-color: layout.$secondary-dark;
+        background-color: variables.$secondary-dark;
     }
 
     h1 {
-        color: layout.$text-dark;
+        color: variables.$text-dark;
     }
 
     footer {
@@ -115,6 +115,6 @@
     }
 
     .omsass1, .omsass2 {
-        color: layout.$text-dark;
+        color: variables.$text-dark;
     }
 }

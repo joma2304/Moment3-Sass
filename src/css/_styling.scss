@@ -1,7 +1,7 @@
-@use 'layout';
+@use 'variables';
 
 * {
-    font-family: layout.$font-stack;
+    font-family: variables.$font-stack;
 }
 
 /*Styling/
