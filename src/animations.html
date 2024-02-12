@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.scss">
+    <title>Startsida för moment 3</title>
+    <script src="js/main.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"> <img src="images/logo.svg" alt="Logotyp" class="logo"></a>
+        <!-- Meny knapp för att öppna mobilmenyn-->
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+        </button>
+        <!-- navigering -->
+        <nav id="nav-menu">
+            <!-- Knapp som visas om mobilmenyn är utfälld -->
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+            </button>
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="sass.html">Om Sass</a></li>
+                <li><a href="animations.html" class="active">Animationer</a></li>
+                <li><a href="#">Meny4</a></li>
+                <li><a href="#">Meny5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="h1-ani">Animationer</h1>
+        <picture>
+            <source srcset="images/puppy.jpg?as=avif&width=400" type="image/avif">
+            <source srcset="images/puppy.jpg?as=webp&width=400" type="image/webp">
+            <source srcset="images/puppy.jpg?width=400" type="image/jpeg">
+            <img class="ani-pic" src="images/puppy.jpg" alt="Golden retriver hundvalp">
+        </picture>
+        <picture>
+            <source srcset="images/dogfood.png?as=avif&width=150" type="image/avif">
+            <source srcset="images/dogfood.png?as=webp&width=150" type="image/webp">
+            <source srcset="images/dogfood.png?width=150" type="image/png">
+            <img class="ani-pic2" src="images/dogfood.png" alt="En skål med hundmat">
+        </picture>
+    </main>
+    <footer>
+        <ul>
+            <li>Webbplats av: Johan Magnusson</li>
+            <li>Mittuniversitetet</li>
+            <li>2024</li>
+        </ul>
+    </footer>
+</body>
+
+</html>

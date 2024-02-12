@@ -159,7 +159,8 @@ main {
     padding-top: 10px;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-align: center;
 }
 
@@ -217,4 +218,69 @@ footer {
 .omsass2 {
     @extend .omsass1;
     font-size: 110%;
+}
+
+/*Animationer*/
+
+@keyframes h1Animations {
+    0% {
+        color: lightseagreen;
+        transform: scale(1, 1);
+        transform: rotate(40deg);
+    }
+
+    25% {
+        color: red;
+        transform: rotate(-40deg);
+    }
+
+    50% {
+        color: green;
+        transform: rotate(40deg);
+    }
+
+    75% {
+        color: darkorange;
+        transform: rotate(-40deg);
+    }
+
+    100% {
+        color: lightseagreen;
+        transform: scale(2, 2);
+    }
+}
+
+#h1-ani {
+    animation: h1Animations 8s infinite alternate;
+}
+
+.ani-pic {
+    max-width: 90%;
+    border-radius: 0;
+    transition-property: border-radius;
+    transition-duration: 3s;
+    transition-delay: 0s;
+}
+
+.ani-pic:hover {
+    border-radius: 999px;
+}
+
+@keyframes dogfood {
+    25%{
+       transform: translate(50px, -100px); 
+    }
+    50% {
+        transform: translate(-50px, -250px);
+    }
+    75% {
+        transform: translate(0px, -350px);
+    }
+    100% {
+        transform: translate(50px, 20px);
+    }
+}
+
+.ani-pic2 {
+    animation: dogfood 5s ease-in-out infinite alternate;
 }
