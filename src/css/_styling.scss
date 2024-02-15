@@ -49,13 +49,12 @@ nav {
     a {
         text-decoration: none;
         padding: 0 1em;
-        font-size: 1.2em;
     }
 
     li:hover {
         text-decoration: underline;
-        cursor: pointer;
         transition: 0.4s ease-in-out;
+        cursor: pointer;
     }
 }
 
@@ -71,6 +70,7 @@ nav {
     padding: 8px 15px;
     cursor: pointer;
     margin-right: 2px;
+    transition: ease-in 0.3s;
 }
 
 .open {
@@ -79,7 +79,6 @@ nav {
 
 .menu-btn:hover {
     border-radius: 50px;
-    transition: ease-in 0.3s;
 }
 
 
@@ -227,36 +226,42 @@ footer {
         color: lightseagreen;
         transform: scale(1, 1);
         transform: rotate(40deg);
+        filter: drop-shadow(5px 5px 5px lightseagreen);
     }
 
     25% {
         color: red;
         transform: rotate(-40deg);
+        filter: drop-shadow(5px 5px 5px red);
     }
 
     50% {
         color: green;
         transform: rotate(40deg);
+        filter: drop-shadow(5px 5px 5px green);
     }
 
     75% {
         color: darkorange;
         transform: rotate(-40deg);
+        filter: drop-shadow(5px 5px 5px darkorange);
     }
 
     100% {
         color: lightseagreen;
         transform: scale(2, 2);
+        filter: drop-shadow(5px 5px 5px lightseagreen);
     }
 }
 
 #h1-ani {
-    animation: h1Animations 8s infinite alternate;
+    animation: h1Animations 6s infinite alternate;
 }
 
 .ani-pic {
-    max-width: 90%;
-    border-radius: 0;
+    max-width: 80%;
+    border-radius: 5px;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
     transition-property: border-radius;
     transition-duration: 3s;
     transition-delay: 0s;
@@ -267,15 +272,18 @@ footer {
 }
 
 @keyframes dogfood {
-    25%{
-       transform: translate(50px, -100px); 
+    25% {
+        transform: translate(50px, -100px);
     }
+
     50% {
         transform: translate(-50px, -250px);
     }
+
     75% {
         transform: translate(0px, -350px);
     }
+
     100% {
         transform: translate(50px, 20px);
     }
