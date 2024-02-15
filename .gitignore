@@ -1,5 +1,7 @@
 node_modules/
 dist/
 .parcel-cache/
-.DS_Store
+client/.DS_Store
+## This one might be better
+/.DS_Store
 
