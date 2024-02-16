@@ -56,8 +56,13 @@ function createChart(labels, data) {
         options: {
             scales: {
                 x: {
+                    maintainAspectRatio: false,
                     ticks: {
-                        color: 'lightgreen'
+                        color: 'lightgreen',
+                        maxTicksLimit: 10,
+                        autoSkipPadding: 10, // Auto-skip tickar baserat på tillgänglig bredd
+                        maxRotation: 45, // Justera rotationsvinkeln för tickarna vid behov
+                        minRotation: 45
                     }
                 },
                 y: {
@@ -66,6 +71,14 @@ function createChart(labels, data) {
                     beginAtZero: true,
                     ticks: {
                         color: 'lightgreen' 
+                    }, 
+                    
+                }
+            },
+            plugins: {
+                legend: {
+                    labels: {
+                        color: 'lightgreen' // Justera färgen på legendtexten till ljusgrön
                     }
                 }
             }
