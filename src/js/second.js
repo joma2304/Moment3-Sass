@@ -40,28 +40,31 @@ function displayProgram(data) {
 
 function createChart(labels, data) {
     const ctx = document.getElementById('chart').getContext('2d');
+
     new Chart(ctx, {
         type: 'line',
         data: {
-            labels: labels,
+            labels: labels, // Lägg till labels för x-axeln
             datasets: [{
                 label: 'Totalt antal sökande',
                 data: data,
-                borderColor: 'lightgreen', // Kantfärg för linjen (grön)
+                borderColor: 'lightgreen',
                 backgroundColor: 'lightgreen',
-                pointBackgroundColor: 'lightgreen', // Färg för punkterna (grön)
+                pointBackgroundColor: 'lightgreen',
                 borderWidth: 2
             }]
         },
         options: {
             scales: {
                 x: {
+                    display: window.innerWidth >= 700, // Visa x-axeln om skärmbredden är större än eller lika med 700 px
                     maintainAspectRatio: false,
+                    responsive: true,
                     ticks: {
                         color: 'lightgreen',
                         maxTicksLimit: 10,
-                        autoSkipPadding: 10, // Auto-skip tickar baserat på tillgänglig bredd
-                        maxRotation: 45, // Justera rotationsvinkeln för tickarna vid behov
+                        autoSkipPadding: 10,
+                        maxRotation: 45,
                         minRotation: 45
                     }
                 },
@@ -70,15 +73,14 @@ function createChart(labels, data) {
                     responsive: true,
                     beginAtZero: true,
                     ticks: {
-                        color: 'lightgreen' 
-                    }, 
-                    
+                        color: 'lightgreen'
+                    }
                 }
             },
             plugins: {
                 legend: {
                     labels: {
-                        color: 'lightgreen' // Justera färgen på legendtexten till ljusgrön
+                        color: 'lightgreen'
                     }
                 }
             }
