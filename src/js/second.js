@@ -37,12 +37,12 @@ function displayProgram(data) {
     createPieChart(programName, applicantsTotal);
 }
 
-
+//Linjediagram
 function createChart(labels, data) {
     const ctx = document.getElementById('chart').getContext('2d');
 
     new Chart(ctx, {
-        type: 'line',
+        type: 'bar',
         data: {
             labels: labels, // Lägg till labels för x-axeln
             datasets: [{
@@ -87,7 +87,7 @@ function createChart(labels, data) {
         }
     });
 }
-
+//Doughnut diagram
 function createPieChart(labels, data) {
     const ctx = document.getElementById('pieChart').getContext('2d');
     new Chart(ctx, {
