@@ -9,7 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.scss">
     <title>Startsida för moment 3</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="js/main.js" type="module"></script>
+    <script src="js/third.js" type="module"></script>
 </head>
 
 <body>
@@ -42,6 +48,12 @@
         </nav>
     </header>
     <main>
+        <h1>Karta</h1>
+        <div id="searchholder">
+            <input type="search" id="searchInput" placeholder="Sök efter en plats">
+            <button id="searchButton">Sök</button>
+        </div>
+        <div id="mapid"></div>
     </main>
     <footer>
         <ul>
