@@ -3,7 +3,7 @@
 import Chart from 'chart.js/auto';
 
 const url = "https://studenter.miun.se/~mallar/dt211g/";
-window.onload = init;
+window.onload = init; //Anropa funktion när fönstert laddas
 
 async function init() {
     try {
@@ -20,21 +20,21 @@ async function init() {
 }
 
 function displayCourse(data) {
-    const course = data.filter(item => item.type === "Kurs");
-    const courseSorted = course.sort((a, b) => b.applicantsTotal - a.applicantsTotal);
-    const MostAppliedCourses = courseSorted.slice(0, 6);
-    const courseName = MostAppliedCourses.map(course => course.name);
-    const applicantsTotal = MostAppliedCourses.map(course => course.applicantsTotal);
-    createChart(courseName, applicantsTotal);
+    const course = data.filter(item => item.type === "Kurs"); //Filtrera efter kurs
+    const courseSorted = course.sort((a, b) => b.applicantsTotal - a.applicantsTotal); //Sortera i fallande ordning 
+    const MostAppliedCourses = courseSorted.slice(0, 6); //Välj 6 mest sökta
+    const courseName = MostAppliedCourses.map(course => course.name); //Kursnamn
+    const applicantsTotal = MostAppliedCourses.map(course => course.applicantsTotal); //Antal sökande
+    createChart(courseName, applicantsTotal); // anropa funktion skapa diagram skicka med kursnamn och antal som argument
 }
 
 function displayProgram(data) {
-    const program = data.filter(item => item.type === "Program");
-    const sortedProgram = program.sort((a, b) => b.applicantsTotal - a.applicantsTotal);
-    const mostAppliedProgram = sortedProgram.slice(0, 5);
-    const programName = mostAppliedProgram.map(program => program.name);
-    const applicantsTotal = mostAppliedProgram.map(program => program.applicantsTotal);
-    createPieChart(programName, applicantsTotal);
+    const program = data.filter(item => item.type === "Program"); //Filtrera efter program
+    const sortedProgram = program.sort((a, b) => b.applicantsTotal - a.applicantsTotal); //Sortera i fallande ordning
+    const mostAppliedProgram = sortedProgram.slice(0, 5);   //Välj 5 mest sökta
+    const programName = mostAppliedProgram.map(program => program.name);    //Program namn
+    const applicantsTotal = mostAppliedProgram.map(program => program.applicantsTotal); //Antal sökande
+    createPieChart(programName, applicantsTotal); //Anropa funktion skapa piediagram skicka med porgramnamn och antal som argument
 }
 
 //Linjediagram

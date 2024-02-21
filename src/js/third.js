@@ -12,7 +12,7 @@ document.getElementById('searchButton').addEventListener('click', search); //Eve
 
 async function search() {
     let query = document.getElementById('searchInput').value;   //Hämtar input i sökfält
-    if (query.length > 0) {
+    if (query.length > 0) { 
         try {
             // Rensa tidigare sökresultat
             map.eachLayer(function (layer) {
@@ -23,9 +23,9 @@ async function search() {
 
             const response = await fetch('https://nominatim.openstreetmap.org/search?format=json&q=' + encodeURIComponent(query));
             const data = await response.json();
-            if (data.length > 0) {
-                let lat = parseFloat(data[0].lat);
-                let lon = parseFloat(data[0].lon);
+            if (data.length > 0) {      //Kollar efter resultat i sökningen
+                let lat = parseFloat(data[0].lat);  //Latitud
+                let lon = parseFloat(data[0].lon);  //Longitud
                 map.setView([lat, lon], 13); // Sätt ny vy till platsen med zoomnivå 13
                 L.marker([lat, lon]).addTo(map); // Lägg till en markör på platsen
             } else {

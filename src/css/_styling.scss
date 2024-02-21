@@ -296,10 +296,13 @@ footer {
 .table1 {
     margin-left: auto;
     margin-right: auto;
-    width: 60%; /* Använd procent istället för vh */
-    height: auto; /* Använd auto för höjden */
+    width: 60%;
+    /* Använd procent istället för vh */
+    height: auto;
+    /* Använd auto för höjden */
     max-width: 90%;
-    min-height: 300px; /* Ange en minsta höjd som är tillräcklig för att rymma all text */
+    min-height: 300px;
+    /* Ange en minsta höjd som är tillräcklig för att rymma all text */
     position: relative;
 }
 
@@ -316,8 +319,8 @@ footer {
 }
 
 #mapid {
-margin-left: auto;
-margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 70%;
     height: 600px;
 }
@@ -330,7 +333,8 @@ margin-right: auto;
         height: 500px;
     }
 
-    .table1 {width: 90%;
+    .table1 {
+        width: 90%;
     }
 }
 
