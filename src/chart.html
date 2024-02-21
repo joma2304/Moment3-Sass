@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/main.scss">
     <title>Startsida för moment 3</title>
     <script src="js/main.js" type="module"></script>
+    <script src="js/second.js" type="module"></script>
 </head>
 
 <body>
@@ -33,28 +34,20 @@
                 </span>
             </button>
             <ul>
-                <li><a href="index.html" class="active">Startsida</a></li>
+                <li><a href="index.html">Startsida</a></li>
                 <li><a href="sass.html">Om Sass</a></li>
                 <li><a href="animations.html">Animationer</a></li>
-                <li><a href="chart.html">Diagram</a></li>
+                <li><a href="chart.html" class="active">Diagram</a></li>
                 <li><a href="map.html">Karta</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Välkommen denna webbplats för kursen Frontend-baserad webbutveckling</h1>
-        <picture>
-            <source srcset="images/code1.jpg?as=avif&width=800" type="image/avif">
-            <source srcset="images/code1.jpg?as=webp&width=800" type="image/webp">
-            <source srcset="images/code1.jpg?width=800" type="image/jpeg">
-            <img class="startpic" src="images/code1.jpg" alt="Kod på en datorskärm">
-        </picture>
-        <picture>
-            <source srcset="images/code2.jpg?as=avif&width=800" type="image/avif">
-            <source srcset="images/code2.jpg?as=webp&width=800" type="image/webp">
-            <source srcset="images/code2.jpg?width=800" type="image/jpeg">
-            <img class="startpic" src="images/code2.jpg" alt="Kod på en datorskärm">
-        </picture>
+        <div class="table1">
+            <canvas id="chart" class="canvas1"></canvas>
+        </div>
+        <div id="error"></div>
+        <div class="table2"><canvas id="pieChart"></canvas></div>
     </main>
     <footer>
         <ul>

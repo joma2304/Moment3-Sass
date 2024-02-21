@@ -292,3 +292,54 @@ footer {
 .ani-pic2 {
     animation: dogfood 5s ease-in-out infinite alternate;
 }
+
+.table1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    /* Använd procent istället för vh */
+    height: auto;
+    /* Använd auto för höjden */
+    max-width: 90%;
+    min-height: 300px;
+    /* Ange en minsta höjd som är tillräcklig för att rymma all text */
+    position: relative;
+}
+
+.canvas1 {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.table2 {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 50px 5px 50px;
+}
+
+#mapid {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 600px;
+}
+
+@media only screen and (max-width: 700px) {
+    #mapid {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 500px;
+    }
+
+    .table1 {
+        width: 90%;
+    }
+}
+
+#searchholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
